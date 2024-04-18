@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🪨 - ✂️ - 📄</title>
+        <script src="./JSjuego1.js"></script>
+        <link rel="stylesheet" href="./CSSJuego1.css">
+
+    </head>
+    <body>
+        <h1 id="titulo">Piedra - Papel - Tijeras</h1>
+        <div id="todotodo">
+            <div class="seleccion">
+                <h2 class="instruccion">Elige tu tirada</h2>
+                <div class="opciones">
+                    <input type="radio" class="inputataque" name="tirada" id="piedra"/>
+                    <label for="piedra" class="tarjeta-de-ataque">
+                        <img src="./Juego1imgs/piedranin.png" alt="">
+                    </label>
+                
+                    <input type="radio" class="inputataque" name="tirada" id="papel"/>
+                    <label for="papel" class="tarjeta-de-ataque">
+                        <img src="./Juego1imgs/papelnin.png" alt="">
+                    </label>   
+                
+                    <input type="radio" class="inputataque" name="tirada" id="tijera"/>
+                    <label for="tijera" class="tarjeta-de-ataque">
+                        <img src="./Juego1imgs/tijeranin.png" alt="">
+                    </label>
+                </div>
+                <br>
+                    <button id="boton-ataque">Atacar</button>
+                <br>
+            </div>
+            <div id="areacombate">
+                <p id="titulo-jug">Jugador</p>
+                <p id="ataque-jugador"><span id="mascota-jugador">-</span></p>
+                <div class="triunfo" id="contador-jugador"> Tiene <span id="triunfo-jugador">0</span><span id="vidaj"> victorias</span></div>
+                <p id="batalla-jugador"></p>
+
+                <p id="batalla-resultado">VS</p>
+
+                <p id="titulo-ene">Enemigo</p>
+                <p id="ataque-enemigo"><span id="mascota-enemigo">-</span></p>
+                <div class="triunfo" id="contador-enemigo"> Tiene <span id="triunfo-enemigo">0</span> <span id="vidae"> victorias</span></div>
+                <p id="batalla-enemigo"></p>
+            </div>
+        </div>
+
+    </body>
+</html>

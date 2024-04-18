@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+20&display=swap');
+body {
+    font-family: "Jersey 20", sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+    flex-direction: column;       
+}
+#titulo{
+    font-family: 'Dancing Script', cursive;
+	font-size: 4vw;
+    margin-bottom: 10px;
+    text-align: center;
+	width: 100%;
+	height: auto;
+    color: #000;
+    text-shadow: 1px 1px 1px #e4dede;
+    background-image: linear-gradient(168deg, #ffbc05c7 10%, #082bfd6b 100%);
+    background-size: cover;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+#todotodo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.seleccion{
+    display: flex;
+    flex-direction: column;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.inputataque{
+    display: none;
+}
+.instruccion{
+    font-family: 'Dancing Script', cursive;
+	font-size: 2vw;
+    margin-bottom: 5px;
+    text-align: center;
+	width: 100%;
+	height: auto;
+    color: #000;
+    text-shadow: 1px 1px 1px #e4dede;
+    background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.opciones{
+    display: flex;
+}
+.opciones img{
+    width: 10vw;
+}
+#mascota-jugador img{
+    width: 15vw;
+    
+    animation-name: imgjugador;
+    animation-duration: 3s;
+}
+@keyframes imgjugador {
+    0%   {padding-left: 000px;} 
+    50%  {padding-left: 20vw;}
+    100% {padding-left: 000px;}
+}
+#mascota-enemigo img{
+    width: 15vw; 
+     
+    animation-name: imgenemigo;
+    animation-duration: 3s;
+}
+@keyframes imgenemigo {
+    0%   {padding-right: 000px;}
+    50%  {padding-right: 20vw;}
+    100% {padding-right: 000px;}
+}
+#boton-ataque{
+    background: aliceblue;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px
+}
+#boton-ataque:hover{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+#boton-ataque:active{
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+#boton-ataque:active #areacombate{
+    display: "none";
+
+}
+#areacombate{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 20% 50% 15% 15%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 90%
+}
+#titulo-jug{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+#ataque-jugador{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+#contador-jugador{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+#batalla-jugador{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+#titulo-ene{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+#ataque-enemigo{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+#contador-enemigo{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+#batalla-enemigo{
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+#batalla-resultado{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+@media (max-width:440px){
+    body{
+        background: #000;
+    }
+}
